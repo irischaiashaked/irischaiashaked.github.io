@@ -47,23 +47,30 @@ body {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.navbar .download-cv:hover {
-  background: #5f4838;
-  transform: translateY(-2px);
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.navbar .download-cv {
+  order: 1;
+  margin-left: auto;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 800;
-  color: #7b5f4b;
-  text-decoration: none;
-  white-space: nowrap;
+  order: 2;
 }
 
 .nav-links {
+  order: 3;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 14px;
   margin: 0;
   padding: 0;

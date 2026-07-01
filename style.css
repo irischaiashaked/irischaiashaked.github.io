@@ -48,9 +48,7 @@ h1 { margin: 22px 0 8px; font-size: clamp(34px, 7vw, 56px); color: #5b4638; }
     gap: 20px;
 }
 
-.nav-links {
-    margin-right: auto;
-}
+
 .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .contact-section { text-align: center; background: #2f2924; color: #fff; padding: 70px 24px; }
 .contact-section h2 { color: #fff; }
@@ -59,3 +57,21 @@ h1 { margin: 22px 0 8px; font-size: clamp(34px, 7vw, 56px); color: #5b4638; }
 .whatsapp-button:hover { background: #1ebe5d; }
 .footer-contact { margin-top: 24px; color: #eee0d6; }
 @media (max-width: 760px) { .navbar { flex-direction: column; } .nav-links { justify-content: center; } .hero { padding-top: 45px; } .timeline-item { grid-template-columns: 1fr; } .cards-grid { grid-template-columns: 1fr; } .profile-image { width: 160px; height: 160px; } }
+.navbar .download-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #7b5f4b;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+}
+
+.navbar .download-cv:hover {
+  background: #5f4838;
+  transform: translateY(-2px);
+}
